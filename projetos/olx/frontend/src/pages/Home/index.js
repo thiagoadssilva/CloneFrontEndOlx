@@ -7,7 +7,6 @@ const Page = () => {
             <h1>Pagina Inicial</h1>
             <Link to="/about">Sobre</Link>
         </div>
-        
     );
 }
 
