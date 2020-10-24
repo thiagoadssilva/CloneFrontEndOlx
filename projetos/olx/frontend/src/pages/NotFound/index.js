@@ -4,10 +4,12 @@ import { Link } from 'react-router-dom';
 const Page = () => {
     return(
         <div>
-            <h1>Pagina Inicial</h1>
-            <Link to="/about">Sobre</Link>
+            <h1>Pagina não encontrada</h1>
+            <Link to="/">Voltar para HOME</Link>
         </div>
     );
 }
 
 export default Page;
+
+
