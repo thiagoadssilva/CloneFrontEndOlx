@@ -61,6 +61,13 @@ const OlxAPI = {
            {email, password}
        );
        return json;
+    },
+
+    getStates:async () =>{
+        const json = await apiFetchGet(
+            '/states'
+        );
+        return json.states;
     }
 };
 
