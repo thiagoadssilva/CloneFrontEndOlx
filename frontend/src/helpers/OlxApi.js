@@ -22,7 +22,6 @@ const apiFetchPost = async (andpoint, body) =>{
         },
         body: JSON.stringify(body)
     });
-    
     const json = await res.json();
 
     if(json.notallowed){
@@ -62,6 +61,13 @@ const OlxAPI = {
            {email, password}
        );
        return json;
+    },
+
+    getStates:async () =>{
+        const json = await apiFetchGet(
+            '/states'
+        );
+        return json.states;
     }
 };
 
