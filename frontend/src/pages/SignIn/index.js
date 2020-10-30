@@ -26,6 +26,7 @@ const Page = () =>{
   const handleSubmit = async (e) => {
     e.preventDefault();
     setDisabled(true);// Aqui não permito que o usuario apere novamento no botão.
+    setError('');
     // Criando uma constando que vai está armazendo o retorno da função como objeto json
     const json = await api.login(email, password);
      

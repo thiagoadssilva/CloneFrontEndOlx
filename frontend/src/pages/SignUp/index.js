@@ -5,6 +5,7 @@ import useApi from '../../helpers/OlxApi';
 import { doLogin } from '../../helpers/AuthHandler';
 
 import { PageContainer, PageTitle, ErrorMessage} from '../../components/MainComponents';
+import { set } from "js-cookie";
 
 
 const Page = () =>{
@@ -20,6 +21,8 @@ const Page = () =>{
   const [stateList, setStateList] = useState([]);
   //- FIM Criando os states para cada campo que existe ne tela
 
+  console.log(password)
+
   // Constante para fazer o controle do carregamento das informações da tela, não deixando o usuario dar duplo click no botão. 
   const [disabled, setDisabled] = useState(false);
   // Criando uma constante para o retorno de algum erro na api
@@ -32,22 +35,29 @@ const Page = () =>{
       setStateList(slist);
     }
     getStates();
-  }, [])
-
+  }, []);
 
   // Função que vai validar o acesso do usuario;
   const handleSubmit = async (e) => {
     e.preventDefault();
     setDisabled(true);// Aqui não permito que o usuario apere novamento no botão.
+    setError('');
+
+    if(password !== confirmPassword){
+      setError('Senhas não batem!!');
+      setDisabled(true);
+      return;
+    }
+  
     // Criando uma constando que vai está armazendo o retorno da função como objeto json
-    const json = await api.login(email, password);
+    const json = await api.register(name, email, password, stateLoc);
      
-    // if(json.error){
-    //   setError(json.error);
-    // }else{
-    //   doLogin(json.token, rememberPassword);
-    //   window.location.href = '/';
-    // }
+    if(json.error){
+      setError(json.error);
+    }else{
+      doLogin(json.token);
+      window.location.href = '/';
+    }
 
     setDisabled(false);
   }
@@ -112,8 +122,9 @@ const Page = () =>{
                   type="password"
                   disabled={disabled}
                   value={password}
-                  onChange={e=>setPassword(e.target.value)}
-                  required></input>
+                  onChange={e => setPassword(e.target.value)}
+                  required>
+                </input>
               </div>
             </div>
           </label>
@@ -136,8 +147,7 @@ const Page = () =>{
           <label>
             <div className="area"> 
               <div className="area--title"></div>
-              <div className="area--input"
-              >
+              <div className="area--input">
                 <button disabled={disabled}>Fazer Cadastro</button>
               </div>
             </div>
