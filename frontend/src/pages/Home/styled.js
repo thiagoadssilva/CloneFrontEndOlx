@@ -35,6 +35,7 @@ export const SearchArea = styled.div`
 
     select{
       width: 100px;
+      background-color: #FFF;
     }
 
     button{
@@ -47,9 +48,35 @@ export const SearchArea = styled.div`
       padding: 0 20px;
       cursor: pointer;
     }
-
-
   }
+
+  .categoriesList{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    .categoriesItem{
+      width: 25%;
+      display: flex;
+      align-items: center;
+      color: #000;
+      text-decoration: none;
+      height: 50px;
+      margin-bottom: 10px;
+
+      &:hover {
+        color: #999;
+      }
+
+
+      img{
+        width: 45px;
+        height: 45px;
+        margin-right: 10px;
+      } 
+    }
+  }
+
 `;
 
 export const PageArea = styled.div`
