@@ -17,4 +17,4 @@
 
 ### Imagem da tela inicial (ainda em desenvolvimento)
 
-![Tela Principal](/assets/paginaPrincipal.png)
+![Tela Principal](images/paginaPrincipal.png)
