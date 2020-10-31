@@ -68,7 +68,6 @@ export const SearchArea = styled.div`
         color: #999;
       }
 
-
       img{
         width: 45px;
         height: 45px;
@@ -80,5 +79,24 @@ export const SearchArea = styled.div`
 `;
 
 export const PageArea = styled.div`
+  h2{
+    font-size: 20px;
+  }
+
+  .list{
+    display: flex;
+    flex-wrap: wrap;
+
+    .aditem{
+      width: 25%;
+    }
+  }
   
+  .seeAllLink{
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+  }
 `;

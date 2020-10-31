@@ -5,8 +5,6 @@ import useApi from '../../helpers/OlxApi';
 import { doLogin } from '../../helpers/AuthHandler';
 
 import { PageContainer, PageTitle, ErrorMessage} from '../../components/MainComponents';
-import { set } from "js-cookie";
-
 
 const Page = () =>{
   // Fazendo a chamada da função do arquivo que comunicação com a webService
