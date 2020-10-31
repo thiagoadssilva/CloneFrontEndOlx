@@ -1,20 +1,15 @@
-### Projeto clone do Olx, para treinamento da tecnologia REACJS
+### Projeto clone do Olx, para treinamento da tecnologia <b>REACJS</b> (Parte FrontEnd)
 
-### Fazendo a configuração do REDUX
-	- yarn add redux react-redux --save
+- Dentro do <b>README</b> da pasta do projeto está tudo que foi ou está sendo usando.
+https://github.com/thiagoadssilva/CloneFrontEndOlx/blob/master/README.md
 
-### Fazendo a configurações das routas
-	- yarn add react-router-dom --save
+<hr/>
 
-### Vamos fazer a instalção dos styled-compenents
-	- yarn add styled-components --save
-
-### Agora para trabalhar com armazenamente do cookie, vamos fazer a instalação da dependência
-	- yarn add js-cookie --save
-
-### Agora vamos usar uma dependencia conhecida como queryString
-	- yarn add qs --save
-
-### Imagem da tela inicial (ainda em desenvolvimento)
+## Tela <b>Principal</b> (Antes de fazer o login.)
 
 ![Tela Principal](images/paginaPrincipal.png)
+
+## Tela dos <b>Detalhe</b> dos itens 
+
+![Tela Principal](images/detalheItem.png)
+
