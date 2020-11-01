@@ -13,6 +13,6 @@ https://github.com/thiagoadssilva/CloneFrontEndOlx/blob/master/README.md
 
 ![Tela Principal](images/detalheItem.png)
 
-- Um detalhe interesante nessa tela foi uso do (sideShow), recurso top.
+- Um detalhe interesante nessa tela foi uso do (slideShow), recurso top.
 - Outra coisa foi o mapa da navegação das pagina informando ao usuáro de onde ele estava. (Na parte superior do lado esquerdo da pagina.)
 
