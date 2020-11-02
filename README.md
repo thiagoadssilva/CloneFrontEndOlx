@@ -27,3 +27,9 @@ https://github.com/thiagoadssilva/CloneFrontEndOlx/blob/master/README.md
 ## Tela do <b>Filtro</b>
 
 ![Tela Anúncios](images/paginaFiltro.png)
+
+<hr>
+
+## finalização do <b>Rodapé</b>
+
+![Tela Anúncios](images/rodape.png)
