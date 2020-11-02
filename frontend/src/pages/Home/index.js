@@ -48,7 +48,7 @@ const Page = () =>{
       <SearchArea>
         <PageContainer>
           <div className="searchBox">
-            <form method="POST" action="/ads" > 
+            <form method="GET" action="/ads" > 
               <input type="text" name="q" placeholder="O que você está procurando?"></input>
               <select name="state">
                 <option>Selecione</option>
