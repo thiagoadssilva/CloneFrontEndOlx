@@ -8,11 +8,16 @@ https://github.com/thiagoadssilva/CloneFrontEndOlx/blob/master/README.md
 ## Tela <b>Principal</b> (Antes de fazer o login.)
 
 ![Tela Principal](images/paginaPrincipal.png)
-
+<hr>
 ## Tela dos <b>Detalhe</b> dos itens 
 
 ![Tela Principal](images/detalheItem.png)
 
 - Um detalhe interesante nessa tela foi uso do (slideShow), recurso top.
 - Outra coisa foi o mapa da navegação das pagina informando ao usuáro de onde ele estava. (Na parte superior do lado esquerdo da pagina.)
+<hr>
+
+## Tela do cadastro dos <b>Anúncios</b>
+
+![Tela Anúncios](images/cadastroAnuncio.png)
 
