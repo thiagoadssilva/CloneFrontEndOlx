@@ -22,3 +22,8 @@ https://github.com/thiagoadssilva/CloneFrontEndOlx/blob/master/README.md
 
 ![Tela Anúncios](images/cadastroAnuncio.png)
 
+<hr>
+
+## Tela do <b>Filtro</b>
+
+![Tela Anúncios](images/paginaFiltro.png)
