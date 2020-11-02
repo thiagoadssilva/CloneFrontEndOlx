@@ -9,6 +9,7 @@ https://github.com/thiagoadssilva/CloneFrontEndOlx/blob/master/README.md
 
 ![Tela Principal](images/paginaPrincipal.png)
 <hr>
+
 ## Tela dos <b>Detalhe</b> dos itens 
 
 ![Tela Principal](images/detalheItem.png)
