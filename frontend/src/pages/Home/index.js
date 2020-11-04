@@ -77,7 +77,7 @@ const Page = () =>{
          <h2>Anúncios Recentes</h2>     
          <div className="list">
               {adList.map((i,k) =>
-                <AdItem key={k} data={i}/>  
+                <AdItem key={k} data={i} controle= {0}/>  
               )}
          </div>
 

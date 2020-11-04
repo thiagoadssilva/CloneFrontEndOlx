@@ -161,7 +161,7 @@ const Page = () =>{
 
         <div className="list" style={{opacity:resultOpacity}}>
           {adList.map((i,k) =>
-            <AdItem key={k} data={i} />
+            <AdItem key={k} data={i} controle = {0}/>
           )}        
         </div>
 

@@ -136,7 +136,7 @@ const Page = () =>{
                         <h2>Outras ofertas do vendedor</h2>
                         <div className="list">
                             {adInfo.others.map((i,k) =>
-                                <AdItem key={k} data={i} />
+                                <AdItem key={k} data={i} controle={0}  />
                             )}
                         </div>
                     </>

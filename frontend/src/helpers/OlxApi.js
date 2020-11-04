@@ -76,6 +76,35 @@ const apiFetchGet = async (andpoint, body = []) =>{
     return json
 }
 
+const apiFetchPut = async (andpoint, body) =>{
+
+    if(!body.token){
+        let token = Cookies.get('token');
+
+        if(token){
+            body.token = token;
+        }
+    }
+
+    const res = await fetch(BASEAPI+andpoint, {
+        method: 'PUT',
+        headers:{
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(body)
+    });
+    const json = await res.json();
+
+    if(json.notallowed){
+        window.location.href = '/signin';
+        return;
+    }
+
+    return json
+}
+
+
 // Criando um objeto para que vai conter as funções que vamos usar para pegar ou validar as informações no webService
 const OlxAPI = {
     login:async(email, password) => {
@@ -93,6 +122,14 @@ const OlxAPI = {
         );
         return json;
     },
+
+    update:async (token, name, email, password, stateLoc) => {
+        const json = await apiFetchPut(
+            '/user/me',
+            {token, name, email, password, state:stateLoc}
+        );
+        return json;    
+    }, 
 
     getStates:async () =>{
         const json = await apiFetchGet(
@@ -130,6 +167,27 @@ const OlxAPI = {
             fData
         );
         return json;
+    },
+
+  
+    addAdUpdate:async (token, state, title, category, price, priceNegotiable, desc) => {
+        const json = await apiFetchPost(
+            '/ad/5fa1f2af2ffa22710207320c',
+            {token, state, title, category, price, priceNegotiable, desc}
+        );
+        return json;    
+    }, 
+
+
+    
+
+    getUser:async (token) =>{
+        
+        const json = await apiFetchGet(
+            '/user/me',
+            token
+        );
+        return json; 
     }
 };
 

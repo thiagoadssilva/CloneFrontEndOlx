@@ -19,8 +19,6 @@ const Page = () =>{
   const [stateList, setStateList] = useState([]);
   //- FIM Criando os states para cada campo que existe ne tela
 
-  console.log(password)
-
   // Constante para fazer o controle do carregamento das informações da tela, não deixando o usuario dar duplo click no botão. 
   const [disabled, setDisabled] = useState(false);
   // Criando uma constante para o retorno de algum erro na api

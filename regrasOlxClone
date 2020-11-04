@@ -1,0 +1,19 @@
+Duas areas distintas
+	1 - Visualizar e alterar as informações do usuario
+	2 - Uma area para visualização do anuncio (aletar e excluir que no caso é desativar)
+		- criar um modal para alteração dasinformações do anuncio
+
+Para pegar o usuario é necessario fazer uma requisição GET para /user/me mandando o (token)
+
+
+passo 
+	1 - Pegar as informações na base e colocar nos campos. - OK
+		obs - falta colocar a infomação do estado no campo - OK	
+	2 - Pegar os anuncios de cada usuario - OK
+	3 - Preparar a tela para alteração dos anuncios
+	
+
+Obs - Para o a finalização do exercicio ainda falta da update para fazer alteração dos anuncios
+as telas já foram criadas junto com algumas validação, olha o função que está no arquivo 
+OlxApi chamada: addAdUpdate
+/********************************************************************************************

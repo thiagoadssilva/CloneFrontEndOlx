@@ -11,6 +11,8 @@ import SignUp from './pages/SignUp';
 import AdPage from './pages/AdPage';
 import AddAd from './pages/AddAd';
 import Ads from './pages/Ads';
+import MyAccount from './pages/MyAccount';
+import AddUpdate from './pages/AddUpdate';
 
 export default () => {
   return(
@@ -42,6 +44,14 @@ export default () => {
 
       <RouteHandler exact path="/ads">
         <Ads />
+      </RouteHandler>
+
+      <RouteHandler exact path="/my-account">
+        <MyAccount />
+      </RouteHandler>
+
+      <RouteHandler private exact path="/post-an-alter/:id">
+        <AddUpdate />
       </RouteHandler>
 
       <RouteHandler>
