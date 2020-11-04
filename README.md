@@ -33,3 +33,16 @@ https://github.com/thiagoadssilva/CloneFrontEndOlx/blob/master/README.md
 ## finalização do <b>Rodapé</b>
 
 ![Tela Anúncios](images/rodape.png)
+
+<hr>
+
+## finalização da pagina de alteração de <b>Minha Conta</b>
+
+![Tela Anúncios](images/minhConta.png)
+
+<hr>
+
+## finalização da pagina para alterar o <b>Anúncio</b>
+
+![Tela Anúncios](images/AlterarAnuncio.png)
+
