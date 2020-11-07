@@ -3,6 +3,8 @@
 - Dentro do <b>README</b> da pasta do projeto está tudo que foi ou está sendo usando.
 https://github.com/thiagoadssilva/CloneFrontEndOlx/blob/master/README.md
 
+- Para visualizar o projeto: http://olx.tfcoder.com/
+
 <hr/>
 
 ## Tela <b>Principal</b> (Antes de fazer o login.)
